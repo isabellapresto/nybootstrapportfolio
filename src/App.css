@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #0a1118;
+  --bs-body-font-family: 'Montserrat', sans-serif;
+ 
+}
+
+.hero__background,
+.hero__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.hero__background {
+  background-size: cover; /* Lägg till detta för att täcka hela området utan förvrängning */
+}
+
+.hero__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* ... (andra stilar som inte har ändrats) ... */
+.container-custom {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .container-custom { width: 1140px; }
+}
+
+@media (min-width: 1400px) {
+  .container-custom { width: 1340px; }
+}
+
+@media (min-width: 1600px) {
+  .container-custom { width: 1520px; }
+}
+
+/*
+* Main Header
+*/
+.header {
+  z-index: 2;
+}
+
+/*
+* Flyout Navigation Bar
+*/
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255,247,231);
+  z-index: 4;
+}
+
+.dropdown-nav__closeNavBtn {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  background-color: rgbA(255,255,255,0.6);
+}
+
+.dropdown-nav__container {
+  height: 100vh;
+  padding: 0 1rem;
+}
+
+/* App.css */
+.black-background {
+  background-color: #FFEDE1;
+  color: #4D3D71; /* Om du vill att texten ska vara vit på svart bakgrund */
+}
+
+
+/* använda förger 
+#FFEDE1;rosa
+#4D3D71; lila
+#FFF9F4; */
+/* #B17F7B header */
+
+
+/* Färger
+dark
+#13131B
+melocotontin
+#FFC4A2
+babyblu
+#B0D9EF
+bbblu
+#D9F7F7
+heartred
+#BC0120
+whiteblu
+#EAFCFE */

@@ -1,0 +1,4 @@
+/* Lägg till detta i ditt CSS-stylark eller lämpligt ställe där du hanterar stilar */
+.navbar-toggler-icon {
+ border: none; /* Tar bort fyrkanten runt hamburgermenyn */
+}

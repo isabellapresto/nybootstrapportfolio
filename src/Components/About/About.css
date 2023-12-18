@@ -1,0 +1,5 @@
+.custom-link {
+ color: #4D3D71;
+ font-weight: bold; /* Gör texten fet */
+ text-decoration: none; /* Ta bort understrykning */
+}

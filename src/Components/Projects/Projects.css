@@ -1,0 +1,85 @@
+.card {
+ position: relative;
+ overflow: hidden;
+ border-radius: 15px;
+ border: none;
+}
+
+.card-overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: rgba(17, 12, 12, 0.858);
+ color: #FFF9F4;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ opacity: 0;
+ transition: opacity 0.3s ease;
+}
+
+.card:hover .card-overlay {
+ opacity: 1;
+}
+
+.card-title,
+.card-text {
+ margin: 0;
+}
+
+
+.card {
+ transition: transform 0.3s ease-in-out; /* Lägg till en övergång för smidig skaleffekt på hover */
+}
+
+.card:hover {
+ transform: scale(1.05); /* Skala upp kortet lite på hover */
+}
+
+.card-overlay {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+ color: #FFF; /* Vit textfärg på kortet */
+ padding: 20px;
+ background-color: rgba(0, 0, 0, 0.814); /* Svart bakgrundsfärg med genomsiktighet */
+ border-radius: 10px;
+ opacity: 0;
+ transition: opacity 0.3s ease-in-out; /* Lägg till en övergång för smidig fade-effekt */
+
+}
+
+.card:hover .card-overlay {
+ opacity: 1; /* Visa overlay på hover */
+}
+
+.projects-container {
+ background-color: #FFF9F4;
+
+}
+
+.projects-container{
+ padding-top: 1px;
+ padding-bottom: 18px;
+
+}
+
+h1{
+ padding-bottom: 20px;
+}
+
+.project-link {
+ color: #B17F7B;
+ text-decoration: none;
+
+}
+
+.project-link:hover {
+ text-decoration: underline; 
+}
+
